@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaHeart } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -19,6 +20,10 @@ const Header = () => {
             className="text-cyan-300 hover:text-cyan-500 transition-colors duration-300 font-semibold"
           >
             Users
+          </Link>
+          <Link to="/likepage" className="flex items-center space-x-1">
+            <FaHeart className="text-red-400" />
+            <span>Wishlist</span>
           </Link>
         </div>
       </nav>
